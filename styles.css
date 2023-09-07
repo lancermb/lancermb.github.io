@@ -177,16 +177,6 @@ header{
   left: 16px;
 }
 
-footer{
-    background-color: rgb(56, 56, 56);
-    width: 100%;
-    height: 200px;
-    border-top: 1px solid rgba(182, 178, 179, 0.918);
-    display: grid;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    grid-template-columns: 50% 50%;
-}
-
 .logo-p{
     font-size: 30px;
     justify-content: left;
@@ -205,4 +195,46 @@ footer{
     border: 2px solid black;
     width: 48%;
     text-align: center;
+}
+
+#footer-main{
+    background-color: #2e2e2e;
+    border: solid 1px pink;
+    padding: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer-main h4{
+    color: darkgrey;
+    padding-bottom: 10px;
+    border:4px solid transparent;
+    border-bottom: 2px solid pink;
+}
+
+
+#footer-main p{
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 100px;
+}
+
+.footer-3 ul {
+    list-style: none;
+}
+
+.footer-3 a{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
 }
